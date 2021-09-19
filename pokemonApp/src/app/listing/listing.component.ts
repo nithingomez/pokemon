@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { forkJoin } from 'rxjs/internal/observable/forkJoin';
 import { CommonService } from '../common.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 import * as RESOURCES from '../../assets/pokemonRes';
 import { Router } from '@angular/router';
 import { PokeMon } from '../pokemonModel';
@@ -25,7 +26,8 @@ export class ListingComponent implements OnInit {
   selectedCriteria: any = RESOURCES.SearchCriteria.NAME;
   constructor(
     private readonly commonService: CommonService,
-    private readonly router: Router
+    private readonly router: Router,
+    private readonly spinner: NgxSpinnerService
   ) { }
 
   ngOnInit() {
@@ -34,6 +36,7 @@ export class ListingComponent implements OnInit {
   }
 
   getAllPokemon(limit: number, offset: number) {
+    this.spinner.show();
     this.commonService.getAllPokemon(limit, offset).subscribe((data: any) => {
       this.pokemonArray = data.results;
 
@@ -66,14 +69,14 @@ export class ListingComponent implements OnInit {
               this.selectedCriteria = localStorage.getItem('selectedSort');
             }
           });
-
+          this.spinner.hide();
         });
 
     }
     );
   }
 
-  pageChange(selectedPage: number) {
+  pageChange(selectedPage: any) {
     this.paginationConfig.currentPage = selectedPage;
   }
 
