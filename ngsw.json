@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1632041195367,
-  "index": "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/index.html",
+  "timestamp": 1632041339980,
+  "index": "https://github.com/nithingomez/pokemon/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/favicon.ico",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/index.html",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/main.fbebb9904fc84d92c83e.js",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/manifest.webmanifest",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/polyfills.c6adb92c75c4e2b063e4.js",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/runtime.80a6d0fbdabcac7c61b3.js",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/styles.31d6cfe0d16ae931b73c.css"
+        "https://github.com/nithingomez/pokemon/favicon.ico",
+        "https://github.com/nithingomez/pokemon/index.html",
+        "https://github.com/nithingomez/pokemon/main.fbebb9904fc84d92c83e.js",
+        "https://github.com/nithingomez/pokemon/manifest.webmanifest",
+        "https://github.com/nithingomez/pokemon/polyfills.c6adb92c75c4e2b063e4.js",
+        "https://github.com/nithingomez/pokemon/runtime.80a6d0fbdabcac7c61b3.js",
+        "https://github.com/nithingomez/pokemon/styles.31d6cfe0d16ae931b73c.css"
       ],
       "patterns": []
     },
@@ -29,37 +29,37 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-128x128.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-144x144.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-152x152.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-192x192.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-384x384.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-512x512.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-72x72.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-96x96.png",
-        "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/pokemonRes.ts"
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-128x128.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-144x144.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-152x152.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-192x192.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-384x384.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-512x512.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-72x72.png",
+        "https://github.com/nithingomez/pokemon/assets/icons/icon-96x96.png",
+        "https://github.com/nithingomez/pokemon/assets/pokemonRes.ts"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/assets/pokemonRes.ts": "24a4c5487fa9064c76c5a855ca8a73fad7821f84",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/index.html": "5c3802cf9e105bfba972e25f7d07a3d1601a9931",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/main.fbebb9904fc84d92c83e.js": "52dab06d30154bd26890e845f354c30aafff2429",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/manifest.webmanifest": "bf94331299fd8b4cb97a22f960e3fe6594f84cb4",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/polyfills.c6adb92c75c4e2b063e4.js": "68e1aadd180f7bc2b6dc3255ab6f0146da4613fe",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/runtime.80a6d0fbdabcac7c61b3.js": "9d03c879f87a3f8a8a47799b0d764d302cca776c",
-    "https://github.com/nithingomez/pokemon/tree/master/pokemonApp/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "https://github.com/nithingomez/pokemon/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "https://github.com/nithingomez/pokemon/assets/pokemonRes.ts": "24a4c5487fa9064c76c5a855ca8a73fad7821f84",
+    "https://github.com/nithingomez/pokemon/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "https://github.com/nithingomez/pokemon/index.html": "67fef62786838bf189b29eed0173c5366157438f",
+    "https://github.com/nithingomez/pokemon/main.fbebb9904fc84d92c83e.js": "52dab06d30154bd26890e845f354c30aafff2429",
+    "https://github.com/nithingomez/pokemon/manifest.webmanifest": "bf94331299fd8b4cb97a22f960e3fe6594f84cb4",
+    "https://github.com/nithingomez/pokemon/polyfills.c6adb92c75c4e2b063e4.js": "68e1aadd180f7bc2b6dc3255ab6f0146da4613fe",
+    "https://github.com/nithingomez/pokemon/runtime.80a6d0fbdabcac7c61b3.js": "9d03c879f87a3f8a8a47799b0d764d302cca776c",
+    "https://github.com/nithingomez/pokemon/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
