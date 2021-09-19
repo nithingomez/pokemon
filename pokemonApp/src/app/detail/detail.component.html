@@ -1,1 +1,27 @@
-<p>detail works!</p>
+<a class="link" [routerLink]="['']">Go Back</a>
+<h2 *ngIf="pokemonData?.name">
+  {{pokemonData.name}}
+</h2>
+
+<div class="column" *ngIf="pokemonData?.name">
+  <div class="card">
+    <div class="imageDiv">
+
+      <img alt={{pokemonData.name}} class="pokemonImage" src={{pokemonData.image}}>
+
+    </div>
+    <div class="detailDiv">
+      <h3>Name: {{pokemonData.name}} </h3>
+      <p>Height: {{pokemonData.height}}</p>
+      <p>Weight: {{pokemonData.weight}}</p>
+      <span>Abilities:</span>
+      <ng-container *ngFor="let ability of pokemonData.abilities; let i = index">
+        {{ability.ability.name}}{{i === pokemonData.abilities.length -1 ? '' :',' }}
+      </ng-container>
+
+    </div>
+
+  </div>
+</div>
+
+<ngx-spinner></ngx-spinner>
