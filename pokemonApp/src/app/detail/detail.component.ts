@@ -38,6 +38,9 @@ export class DetailComponent implements OnInit {
         image: data.sprites.other['official-artwork'].front_default,
       };
       this.spinner.hide();
+    }, (error)=>{
+      this.spinner.hide();
+      alert(JSON.stringify(error.message));
     });
   }
 }

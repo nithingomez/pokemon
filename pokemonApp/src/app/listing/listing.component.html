@@ -56,7 +56,12 @@
     <pagination-controls (pageChange)="pageChange($event)"></pagination-controls>
   </div>
   
-  <div class="noResults" *ngIf="!pokemonDetailArray.length">
+  <div class="noResults" *ngIf="!pokemonDetailArray.length && loadingFlag">
+    <span>Loading...</span>
+  </div>
+
+  <div class="noResults" *ngIf="!pokemonDetailArray.length && !loadingFlag">
     <span>No Results Found</span>
   </div>
+
   <ngx-spinner></ngx-spinner>

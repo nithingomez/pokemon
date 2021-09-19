@@ -18,6 +18,7 @@ export class ListingComponent implements OnInit {
   pokemonDetailArrayOrg: PokeMon[] = [];
   pokemonArrayUrl: any = [];
   searchText: any = '';
+  loadingFlag: boolean = false;
   paginationConfig = {
     currentPage: 1,
     itemsPerPage: 10,
@@ -37,6 +38,7 @@ export class ListingComponent implements OnInit {
 
   getAllPokemon(limit: number, offset: number) {
     this.spinner.show();
+    this.loadingFlag = true;
     this.commonService.getAllPokemon(limit, offset).subscribe((data: any) => {
       this.pokemonArray = data.results;
 
@@ -70,8 +72,17 @@ export class ListingComponent implements OnInit {
             }
           });
           this.spinner.hide();
+          this.loadingFlag = false;
+        },(error)=>{
+          this.spinner.hide();
+          this.loadingFlag = false;
+          alert(JSON.stringify(error.message));
         });
 
+    }, (error)=>{
+      this.spinner.hide();
+      this.loadingFlag = false;
+      alert(JSON.stringify(error.message));
     }
     );
   }
