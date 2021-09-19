@@ -88,6 +88,7 @@ export class ListingComponent implements OnInit {
   setItemsPerPage(totalItems: any) {
     const newObj = { ...this.paginationConfig };
     newObj.itemsPerPage = Number(totalItems);
+    newObj.currentPage = 1;
     this.paginationConfig = { ...newObj };
   }
 
