@@ -1,27 +1,41 @@
-# PokemonApp
+# How to run
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+Navigate to project folder (pokemonApp folder)
+Run `npm install` to install all dependencies
+Run `npm start` or `ng serve' to run the applicaiton in `http://localhost:4200/`
+
+# Features of Pokemon Application
+
+All functionality is achived except keyboard navigation including clean coding,responsiveness, listing, sorting, searching, items per page, detail page etc.
+Pagination added using ngx-pagination, Persisting data after refresh done using Browser Local Storage
+Additional functionalities implemented
+ *spinning loading indicator added ngx-spinner
+ *service worker (pwa) to cache the assets in disk to load the page faster
+
+## Performance Optimization
+
+Methods are created as pure functions for performance optimizations
+Usage of pure pipes instead
+Browser Local Storage is used to retain the search and sort state of the application
+Other performance optimizations not implemented due to time constraint (memoization,virtual scroll)
+
+## Pre push hook
+
+Added ng lint pre push hook (using husky)
+
+## Exclusions
+
+Keyboard Navigation, Unit Testing, Beautification excluded due to time constraint
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
