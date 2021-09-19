@@ -1,1 +1,59 @@
-<p>listing works!</p>
+<h2>
+    Pokemon List
+  </h2>
+  
+  <div class="filterDiv">
+  
+    <select [(ngModel)]="selectedCriteria" (change)="sortBy()">
+      <option *ngFor="let criteria of sortCriteriaArray" [ngValue]="criteria">{{criteria}}</option>
+    </select>
+  
+  
+  
+    &nbsp;&nbsp;
+    <label for="search">Search: &nbsp; </label>
+    <input id="search" type='text' [(ngModel)]='searchText' (input)="search()">
+  </div>
+  
+  <div class="topPaginationBar" *ngIf="pokemonDetailArray?.length">
+    <label for="itemCount">Items per page: </label>
+    <select id="itemCount" class="custom-select" (change)="setItemsPerPage(page.value)" #page>
+      <option selected>10</option>
+      <option>20</option>
+      <option>50</option>
+    </select>
+
+  </div>
+  <div class="row">
+    <ng-container *ngFor="let pokemonDetail of pokemonDetailArray">
+      <div class="column">
+        <div class="card" (click)="goToDetail(pokemonDetail)">
+          <div class="imageDiv">
+  
+            <img alt={{pokemonDetail.name}} class="pokemonImage" src={{pokemonDetail.image}}>
+  
+          </div>
+          <div class="detailDiv">
+            <h3>Name: {{pokemonDetail.name}} </h3>
+            <p>Height: {{pokemonDetail.height}}</p>
+            <p>Weight: {{pokemonDetail.weight}}</p>
+            <span>Abilities:</span>
+            <ng-container *ngFor="let ability of pokemonDetail.abilities; let i = index">
+              {{ability.ability.name}}{{i === pokemonDetail.abilities.length -1 ? '' :',' }}
+            </ng-container>
+  
+          </div>
+  
+        </div>
+      </div>
+    </ng-container>
+  
+  </div>
+  <div class="bottomPaginationBar" *ngIf="pokemonDetailArray?.length">
+  
+ 
+  </div>
+  
+  <div class="noResults" *ngIf="!pokemonDetailArray.length">
+    <span>No Results Found</span>
+  </div>
